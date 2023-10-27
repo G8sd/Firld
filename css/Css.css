@@ -1,3 +1,6 @@
-body{
-    background-color: black;
+
+.logos{
+    height: 100px;
+    width: 100px;
+    border-right: 10px;
 }
