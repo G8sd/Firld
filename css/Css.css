@@ -2,16 +2,69 @@
 .logos{
     height: 100px;
     width: 100px;
-    border-right: 10px;
 }
 
-.black{
-    background-color: #000000;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+.menu{
+ background-color: black;
 }
 
-.black li{
-    display: inline;
+.menu1{
+    background-color: black;
+    display: flex;
+    justify-content: center;
 }
+
+ul.menu1{
+ display: flex;
+ padding: 0;
+ justify-content: center;
+ flex-direction: row;
+ align-items: center;
+ flex-wrap: nowrap;
+ background-color: #000000;
+}
+
+li.menuli{
+ list-style: none;
+ padding: 50px;
+ margin-right: 5px;
+ text-transform: uppercase;
+}
+
+.line{
+ border-left: 3px solid #3333FF;
+ text-transform: uppercase;
+ text-decoration: none;
+ font-weight: bold;
+ color: #FFFFFF;
+}
+
+.img{
+ background-image: url("../images/Techno.webp");
+ height: 400px;
+ width: 1855px;
+ background-size: cover;
+}
+
+.textcenter{
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textmargin{
+    margin-left: 100px;
+}
+
+.textcomp{
+    color: #FFFFFF;
+    margin-left: 100px;
+    width: 100px;
+}
+
+.Zagolovok{
+    color: #FFFFFF;
+    width: 700px;
+}
+
