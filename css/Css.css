@@ -1,4 +1,8 @@
 
+body{
+    margin: 0;
+}
+
 .logos{
     height: 100px;
     width: 100px;
@@ -9,14 +13,13 @@
 }
 
 .menu1{
-    background-color: black;
     display: flex;
     justify-content: center;
 }
 
 ul.menu1{
  display: flex;
- padding: 0;
+ padding: 0px;
  justify-content: center;
  flex-direction: row;
  align-items: center;
@@ -42,8 +45,8 @@ li.menuli{
 .img{
  background-image: url("../images/Techno.webp");
  height: 400px;
- width: 1855px;
  background-size: cover;
+ border-top: 0px;
 }
 
 .textcenter{
@@ -59,8 +62,7 @@ li.menuli{
 
 .textcomp{
     color: #FFFFFF;
-    margin-left: 100px;
-    width: 100px;
+    width: 300px;
 }
 
 .Zagolovok{
@@ -68,3 +70,40 @@ li.menuli{
     width: 700px;
 }
 
+.ikonka{
+    height: 50px;
+    width: 50px;
+}
+
+.but{
+    display: inline-block;
+}
+
+.tuff{
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.menu22{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ut span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.ut span > picture{
+    margin: auto;
+}
+
+.ut span img{
+    width: 50px;
+    height: auto;
+}
