@@ -12,11 +12,13 @@ body{
 
 .menu{
  background-color: black;
+ margin: 0;
 }
 
 .menu1{
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 ul.menu1{
@@ -45,10 +47,8 @@ li.menuli{
 }
 
 .img{
- background-image: url("../images/Techno.webp");
- height: 400px;
- background-size: cover;
- border-top: 0px;
+    background-image: url("../images/Techno.webp");
+    height: 400px;
 }
 
 .textcenter{
@@ -125,7 +125,7 @@ li.menuli{
     text-align: center;
 }
 
-.menu1{
+.menu3{
     background-color: #000000;
 }
 
@@ -137,16 +137,44 @@ li.menuli{
 .Zagolovok2{
     color: #FFFFFF;
     width: 700px;
-}
-
-.Podr{
-    background-color: #fff;
-    color: #000;
-    font-size: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .right{
     float: right;
     display: inline-block;
     padding-right: 10px;
+}
+
+.btn {
+    width: 10em; 
+    height: 3em; 
+    margin-left: 46%;
+    margin-right: 46%;
+}
+
+table{
+    border: 3px solid grey;
+    border-collapse: collapse;
+    
+}
+
+.black{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+th{
+    border: 1px solid grey;   
+}
+
+footer{
+    margin-top: 30px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
