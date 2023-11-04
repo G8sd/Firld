@@ -160,6 +160,8 @@ table{
     
 }
 
+__________________________________
+
 .black{
     background-color: #000000;
     color: #FFFFFF;
@@ -177,4 +179,63 @@ footer{
     display: flex;
     justify-content: center;
     margin: 10px;
+}
+_____________________________________
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row{
+    margin: 10px -16px;
+}
+
+.row > .column {
+    padding: 25px;
+}
+
+.column {
+    float: left;
+    width: 28%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content{
+    background-color: rgb(69, 96, 134);
+    padding: 10px;
+}
+
+.size{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.bold{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.log{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 200px;
+    width: 250px;
+}
+
+.luna{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
