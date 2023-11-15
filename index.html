@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/Css.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>jQuery(() => {
+      $(".menu1 [href]").each(function () {
+          if (this.href == window.location.href) {
+              $(this).addClass("active");
+          }
+      });
+  });
+    </script>
 </head>
 <body>
   <header>
@@ -23,23 +32,59 @@
     <h1 id="p1" class="textcenter">Веб-технологии</h1>
     <h3 class="textcenter">Семенюк Максим</h3>
   </div>
-  <div>
-    <h1 class="textmargin">Заголовок</h1>
-    <p class="textmargin1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam assumenda, laboriosam, aut architecto eligendi reiciendis ut ipsam molestiae fugit mollitia, sit est modi rem culpa unde neque incidunt. Voluptatum, iure.</p>
-    <img class="photo" src="images/Blue.jpg" alt="1">
-    <img class="photo" src="images/Purple.webp" alt="2">
+ 
+  <div class="art">
+  <article>
+    <header><h1>История HTML</h1>
+    <h4>Краткая предыстория</h4>
+    </header>
+    <p>Давным давно, практически на заре цивилизации (до 70-х годов XX века), не было интернета. Вообще не было.</p>
+    <p>С появлением компьютеров появилось желание и потребность как-то их объединить, и 4 крупных университета США взялись за эту задачу. Примерно 7 лет прошло от создания концепции до исторического момента:</p>
+    <p>29 октября 1969 года был проведен сеанс связи между двумя первыми узлами сети ARPANET, на расстоянии в 640 км: в Калифорнийском университете и в Стэнфордском исследовательском институте. Ученый из Лос-Анджелеса подключился удаленно к компьютеру в Стэнфорде. Стэнфордский коллега видел, как появляются на экране символы, введенные на расстоянии, и подтверждал по телефону передачу каждой буковки. Таким образом началась эпоха компьютерных сетей.</p> 
+    <p>Британец Тимоти Джон Бернерс-Ли в Женевском ЦЕРНе изобрел язык гипертекстовой разметки, он же HyperText Markup Language, он же HTML, предназначенный для разметки и оформления документов World Wide Web.</p>
+    <img class="article-img" src="images/Berners.jpg" height="400px">
+    <p>HTML это наследник SGML, вот только создавался он для того, чтобы им могли пользоваться и люди-неспециалисты в области верстки. Т.е. уже с первых дней у HTML были такие плюсы:</p>
+    <p>
+      <ul>
+        <li>Простота - за счет небольшого набора структурных элементов – дескрипторов (они же «теги»). Все теги пишутся в угловых скобках, напр. <img> и несут какую-то смысловую нагрузку</li>
+        <li>Возможность форматировать документ без привязки к средствам отображения (будь то монитор компьютера, экранчик телефона, или ридер)</li>
+      </ul>
+    </p>
+    <p>И как вы уже, наверное, догадались, первый в мире веб-сайт создал тоже Тим Бернерс-Ли
+    И если точная дата изобретения HTML не известна (т.к. это был долгосрочный проект), то день рождения первого сайта очень даже - это было 6 августа 1991 года. Кстати, его можно увидеть и сегодня, правда уже в <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">архиве.</a></p>
+    <img class="article-img" src="images/first-syte.png" height="400px" width="600px">
+    <h4>1994 год - основание W3C</h4>
+    <p>Сэр Тим Бернерс-Ли основал Консорциум Всемирной Паутины (World Wide Web Consortium, W3C). Миссией W3C было и остается:</p>
+    <aside>"Полностью раскрыть потенциал Всемирной паутины, путём создания протоколов и принципов, гарантирующих долгосрочное развитие Сети"</aside>
+    <p>Огромная заслуга этих ребят принадлежит в том, что HTML был выпущен с единым базовым набором тегов и атрибутов и веб-страницы стали такими, какими мы их знаем сейчас.</p>
+    <h4>17 декабря 1996 – CSS</h4>
+    <p>CSS (Cascading Style Sheets), а по-русски – иерархические стилевые спецификации. Думаю, понятней не стало? Если совсем уж по-русски, то это таблицы стилей, которые присоединяются к документу HTML и служат для визуального оформления тех или иных частей документа.Итак, система CSS:</p>
+    <p>
+      <ul>
+        <li>Формально не зависит от HTML</li>
+        <li>У неё свой, отличный от HTML, синтаксис</li>
+        <li>На неё не влияют идеологические ограничения HTML</li>
+        <li>Она позволяет задавать параметры внешнего представления для любого тега HTML</li>
+      </ul>
+    </p>
+    <p>С помощью CSS создатель веб-страницы наконец мог спокойно менять шрифт и размер чего угодно, и что важно – это стало возможным не за счет внедрения кучи новых тегов, а с помощью механизма, который влиял на интерпретацию уже существующих тегов HTML.</p>
+    <h4>28 октября 2014 – HTML5</h4>
+    <p>C этого дня W3C официально рекомендует использовать HTML5.</p>
+    <p>На данный момент развитие HTML продолжается…</p>
+    <p class="article-bottom">W3C выложил в начале июня 2023 рабочий черновик версии 5.1. Консорциум просит всех писать свои отзывы и комментарии относительно этой версии, т.к. HTML остается как и раньше проектом, над которым работают одновременно множество неравнодушных людей, любящих угловые скобки.</p>
+  </article>
   </div>
   
-<div class="ut">
+<div>
     <div class="menu22">
       <h1 class="textcomp">Мои компетенции</h1>
-      <div class="">
-        <div><img src="images/Photoshop.png" alt=""></div>
-            <p>Шарю в Фотошоп</p>
-        <img src="images/Adobe.png" alt="">
-            <p>Эксперт в Adobe</p>
-        <img src="images/Html.png" alt="">
-            <p>Мастер в HTML</p>
+      <div class="comp-div">
+        <div class="iner-div"><img src="images/Photoshop.png" height="100px"  alt="">
+            <p class="comp-p">Шарю в Фотошоп</p></div>
+        <div class="iner-div"><img src="images/Adobe.png" height="100px" alt="">
+            <p class="comp-p">Эксперт в Adobe</p></div>
+        <div class="iner-div"><img src="images/Html.png" height="100px" alt="">
+            <p class="comp-p">Мастер в HTML</p></div>
       </div>
 </div>
 </div>
@@ -57,9 +102,10 @@
   </div>
 </div>
   <div class="menu3">
-    <h1 class="Zagolovok1">Заголовок</h1>
-    <div class="Zagolovok2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam assumenda, laboriosam, aut architecto eligendi reiciendis ut ipsam molestiae fugit mollitia, sit est modi rem culpa unde neque incidunt. Voluptatum, iure.</div>
-    <p><button class="btn">Кнопка</button></p>
+    <h1 class="Zagolovok1">Моё портфолио</h1>
+    <div class="Zagolovok2">Если у вас есть какие-либо сомнения в качестве моих профессиональных навыков, то вы можете посмотреть моё портфолио и резюме, кликнув по соотвествующим кнопкам</div>
+    <div class="button-line"><form action="pages/portfolio.html"><button class="button" style="vertical-align:middle"><span>Портфолио</span></button></form>
+    <form action="pages/summery.html"><button class="button" style="vertical-align:middle"><span>Резюме</span></button></form></div>
   </div>
   </main>
   <footer>

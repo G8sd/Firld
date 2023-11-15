@@ -2,23 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../css/Css.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>jQuery(() => {
+      $(".menu1 [href]").each(function () {
+          if (this.href == window.location.href) {
+              $(this).addClass("active");
+          }
+      });
+  });
+    </script>
 </head>
 <body>
-    <header>
-        <div class="menu">
-          <ul class="menu1">
-            <li class="menuli"><a class="line" href="../index.html">О себе</a></li>
-            <li class="menuli"><a class="line" href="../pages/summery.html">Резюме</a></li>
-            <li class="menuli"><a class="line" href="../pages/portfolio.html">Потфолио</a></li>
-            <li class="menuli"><a class="line" href="#p1">Компетенции</a></li>
-            <li class="menuli"><a class="line" href="../pages/contacts.html">Контакты</a></li>
-          </ul>
-          </div>
-        </header>
+  <header>
+  <div class="menu">
+    <ul class="menu1">
+      <li class="menuli"><a class="line" href="../index.html">О себе</a></li>
+      <li class="menuli"><a class="line" href="../pages/summery.html">Резюме</a></li>
+      <li class="menuli"><a class="line" href="../pages/portfolio.html">Потфолио</a></li>
+      <li class="menuli"><a class="line" href="../index.html">Компетенции</a></li>
+      <li class="menuli"><a class="line" href="../pages/contacts.html">Контакты</a></li>
+    </ul>
+    </div>
+  </header>
         <main>
         <div class="img">
           <h1 id="p1" class="textcenter">Веб-технологии</h1>
