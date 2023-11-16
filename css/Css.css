@@ -5,11 +5,19 @@ body{
 
 .menu{
  background-color: black;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.menu div{
+    display: flex;
+    margin: 10px;
 }
 
 .menu1{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 	margin: 0;
 }
 
@@ -26,11 +34,11 @@ a.active {
 ul.menu1{
     display: flex;
     padding: 0px;
-    justify-content: center;
     flex-direction: row;
-    align-items: center;
     flex-wrap: nowrap;
     background-color: #000000;
+    justify-content: center;
+    align-items: center;
 }
 
 li.menuli{
@@ -53,21 +61,24 @@ li.menuli{
     background-color: rgb(12, 26, 230);
 }
 
+
 .img{
- background-image: url("../images/Techno.webp");
- height: 400px;
- background-repeat: no-repeat;
- background-attachment: fixed;
- background-size: cover;
- border-top: 0px;
+    background-image: url("../images/Techno.webp");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
 }
 
 .textcenter{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #fff;
     margin: 0;
+    display: flex;
 }
 
 .textmargin{
@@ -75,7 +86,10 @@ li.menuli{
 }
 
 .art{
-    background:#5c5c5c;
+    background-image: url(../images/Newspaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:62.5%;
 	line-height:1.4em;
@@ -83,10 +97,10 @@ li.menuli{
 
 article{
 	position:relative;
-	margin:auto;
+	margin:auto;    
 	width:1400px;
 	padding:20px;
-	background:white;
+	background:rgb(220, 224, 178);
 	box-shadow:0px 0px 10px #333;
     column-count:2;
     column-rule: 4px solid #333;
@@ -180,6 +194,9 @@ article aside{
     flex-direction: column;
 }
 
+.comp-div div p{
+    text-align: center;
+}
 
 .container{
     margin-left: 0;
@@ -291,4 +308,57 @@ article aside{
     width: 50px;
     display: inline-block;
     padding-left: 10px;
+}
+
+/*Портфолио*/
+
+/*Резюме*/
+.center{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.black{
+    background-color: #000;
+    color:#FEFEFE;
+}
+
+/*Контакты*/
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-div{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    height: 225px;
+    width: 300px;
+    border: 3px solid #000000;
+    margin: 30px;
+}
+
+.contact h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact div span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.contact div p{
+    padding-top: 25px;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
