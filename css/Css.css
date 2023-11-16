@@ -12,7 +12,7 @@ body{
 
 .menu div{
     display: flex;
-    margin: 10px;
+    margin: 20px;
 }
 
 .menu1{
@@ -310,18 +310,138 @@ article aside{
     padding-left: 10px;
 }
 
+footer{
+    background-color: #000;
+    border-top: 2px solid white;
+}
+
+footer p{
+    color: #fff;
+}
+
 /*Портфолио*/
 
+section{
+    background-image: url(../images/seafon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.otstup{
+    color: #fff;
+    font-size: 34px;
+    margin: 0;
+    text-align: center;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.box{
+    background-color: #fff;
+    border: 1px solid #000000;
+    width: 55%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.group:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.textleft {
+    float: right;
+    width: 69%;
+}
+
+
+.images {
+    float: left;
+    width: 30%;
+}
+
+.log{
+    height: 200px;
+    width: 100%;
+}
+
+.log1{
+    height: 300px;
+    width: 1000px;
+}
+
+.box li{
+    font-weight: bold;
+}
+
 /*Резюме*/
+
+.opit{
+    display: flex;
+    justify-content: center;
+}
+
 .center{
     display: flex;
     justify-content: center;
     padding: 10px;
 }
 
+table{
+    width: 75%;
+    border: 2px solid #000;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+}
+
 .black{
     background-color: #000;
     color:#FEFEFE;
+}
+
+
+table ul{
+    list-style-position: inside;
+    text-align: left;
+}
+
+.table th{
+    background-color: #1e88e5;
+    color:#fff
+}
+
+
+.table th:nth-child(even){
+    background: #18619c;
+}
+
+table tr{
+    transition: all 0.3s;
+    border: 1px solid #000; ;
+}
+
+tbody{
+    background-color: #98abeb;
+}
+
+tbody tr:nth-child(even){
+    background: rgb(134, 207, 236);
+}
+
+table th{
+    transition: all 0.3s;
+    border: 1px solid #000; ;
+}
+
+table tr:hover{
+    background-color: #ccc;
 }
 
 /*Контакты*/
@@ -340,6 +460,7 @@ article aside{
     width: 300px;
     border: 3px solid #000000;
     margin: 30px;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
 }
 
 .contact h2{
@@ -361,4 +482,24 @@ article aside{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+fieldset{
+    width: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+}
+
+legend{
+    font-size: 24px;
+}
+
+fieldset div{
+    margin: 20px;
 }
