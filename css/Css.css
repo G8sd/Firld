@@ -375,6 +375,7 @@ section{
 .log1{
     height: 300px;
     width: 1000px;
+    object-fit: cover;
 }
 
 .box li{
